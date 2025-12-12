@@ -1,10 +1,10 @@
-da1c3b44217a922c312ead010e521c89 *DESCRIPTION
+b08fb6c4fecaa66da64c6a26494ce1c8 *DESCRIPTION
 fbd70816c844da71bf4e42937b90dc18 *NAMESPACE
 d13ddf3fe5635cc20261bd7e9e65a76a *R/symmoments.R
-26226dba13af0fb6d62b401ae4101529 *build/vignette.rds
-2af8041c1e69a94bb19581c94e55890c *inst/doc/symmoments.R
-a07da90d6b5895059810cbb2917a2f1f *inst/doc/symmoments.pdf
-521bf0d2de96a313966924c0f6d41b4d *inst/doc/symmoments.rnw
+1bbe45f7ab3f5242e303890ba403ff33 *build/vignette.rds
+f334915c98978d2a60eda179a029e558 *inst/doc/symmoments.R
+759dac86b1d51e0353f5190f4d4ae724 *inst/doc/symmoments.pdf
+79adb976ee21b28e998d0347e54a73b4 *inst/doc/symmoments.rnw
 93c380ae8d4e59b08956f76fe857d19f *man/callmultmoments.Rd
 1f92be8debb4598b504df4f2b3b6ace9 *man/convert.mpoly.Rd
 f1c66c0392fdfe59dc12909bdf5ad45a *man/convert.multipol.Rd
@@ -26,4 +26,4 @@ f21b66a3d89993afeb007a4bb7670593 *man/tomatching.Rd
 526cf167a101c93078c1146b8ca016de *vignettes/jss.dtx
 b9564ddd59a06782310989e8f33db55e *vignettes/jsslogo.jpg
 d27f5c004a8d9d21da4ea8a6e806a8a9 *vignettes/moments.bib
-521bf0d2de96a313966924c0f6d41b4d *vignettes/symmoments.rnw
+79adb976ee21b28e998d0347e54a73b4 *vignettes/symmoments.rnw

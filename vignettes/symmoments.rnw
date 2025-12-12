@@ -402,7 +402,6 @@ and this can be done in
 \left( \begin{array}{c}
 k_{i}  \\
 l_{i}
-
 \end{array}
 \right)
 \end{equation}
