@@ -1,20 +1,31 @@
 Package: symmoments
-Type: Package
 Title: Symbolic Central and Noncentral Moments of the Multivariate
         Normal Distribution
 Version: 1.2.1.1
-Authors@R: person(given = "Kem",
-                  family = "Phillips",
-                  role = c("aut", "cre"),
-                  email = "kemphillips@comcast.net")
-Depends: mvtnorm, cubature, combinat, multipol
-Suggests: ape, mpoly
-Description: Symbolic central and non-central moments of the multivariate normal distribution. Computes a standard representation, LateX code, and values at specified mean and covariance matrices.
+Authors@R: c(person(given = "Kem",
+                    family = "Phillips",
+                    role = c("aut"),
+                    email = "kemphillips@comcast.net"),
+             person(given = "Florian", family = "Schuberth",
+                    role  = c("aut", "cre"),
+                    email = "f.schuberth@utwente.nl",
+                    comment = c(ORCID = "0000-0002-2110-9086")))
+Maintainer: Florian Schuberth <f.schuberth@utwente.nl>
+Description: Symbolic central and non-central moments of the multivariate normal 
+  distribution. Computes a standard representation, LateX code, and values at 
+  specified mean and covariance matrices.
+Imports: 
+  mvtnorm,
+  cubature,
+  combinat,
+  multipol,
+  mpoly
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 8.0.0
+Suggests: 
+  ape 
 License: GPL
+Encoding: UTF-8
 LazyLoad: yes
-Packaged: 2025-12-11 15:21:17 UTC; hornik
 NeedsCompilation: no
-Repository: CRAN
-Date/Publication: 2025-12-12 12:47:10 UTC
-Author: Kem Phillips [aut, cre]
-Maintainer: Kem Phillips <kemphillips@comcast.net>
+Config/roxygen2/version: 8.0.0
