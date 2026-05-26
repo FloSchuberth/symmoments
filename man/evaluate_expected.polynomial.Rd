@@ -60,5 +60,5 @@ evaluate_expected.polynomial(t0, c(1, 2, 3), c(1, 0, 0, 1, 0, 1))
 \code{\link{evaluate_noncentral}}, \code{\link{make.all.moments}}
 }
 \author{
-Kem Phillips <\email{kemphillips@comcast.net}>
+Kem Phillips \if{html}{\out{<\email{kemphillips@comcast.net}>}}
 }

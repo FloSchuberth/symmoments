@@ -44,5 +44,5 @@ tounsorted(c(3, 1, 2), callmultmoments(c(1, 2, 3)))
 \code{\link{multmoments}}, \code{\link{callmultmoments}}
 }
 \author{
-Kem Phillips <\email{kemphillips@comcast.net}>
+Kem Phillips \if{html}{\out{<\email{kemphillips@comcast.net}>}}
 }

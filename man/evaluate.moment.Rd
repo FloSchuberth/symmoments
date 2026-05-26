@@ -45,5 +45,5 @@ evaluate(callmultmoments(c(1, 2, 3, 4)), c(4, 2, 1, 1, 3, 1, 1, 2, 1, 2))
 and \code{\link{toLatex}} from the \code{symmoments} package.
 }
 \author{
-Kem Phillips \if{html}{\out{<\email{kemphillips@comcast.net}>}}
+Kem Phillips <\email{kemphillips@comcast.net}>
 }

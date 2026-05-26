@@ -55,5 +55,5 @@ m.1234 <- callmultmoments(c(1, 2, 3, 4))
 package.
 }
 \author{
-Kem Phillips \if{html}{\out{<\email{kemphillips@comcast.net}>}}
+Kem Phillips <\email{kemphillips@comcast.net}>
 }

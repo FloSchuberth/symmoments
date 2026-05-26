@@ -44,5 +44,5 @@ toLatex_noncentral(c(1, 3))
 \code{\link{callmultmoments}}, and the method \code{\link{toLatex}}.
 }
 \author{
-Kem Phillips <\email{kemphillips@comcast.net}>
+Kem Phillips \if{html}{\out{<\email{kemphillips@comcast.net}>}}
 }
