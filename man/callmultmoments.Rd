@@ -47,9 +47,7 @@ m.1234 <- callmultmoments(c(1, 2, 3, 4))
 
 }
 \references{
-Phillips, K. (2010). Symbolic Computation of the Central
-Moments of the Multivariate Normal Distribution. \emph{Journal of
-Statistical Software}.
+\insertRef{Phillips2010}{symmoments}
 }
 \seealso{
 \code{\link{multmoments}}, and the methods \code{\link{toLatex}},

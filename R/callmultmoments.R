@@ -31,9 +31,8 @@
 #' The full moment is the sum of these terms multiplied by their respective 
 #' coefficients. If the sum of the exponents is odd, the moment is 0.
 #'
-#' @references Phillips, K. (2010). Symbolic Computation of the Central 
-#' Moments of the Multivariate Normal Distribution. \emph{Journal of 
-#' Statistical Software}.
+#' @references 
+#' \insertRef{Phillips2010}{symmoments}
 #'
 #' @author Kem Phillips <\email{kemphillips@@comcast.net}>
 #'

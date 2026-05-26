@@ -15,11 +15,13 @@ Description: Symbolic central and non-central moments of the multivariate normal
   distribution. Computes a standard representation, LateX code, and values at 
   specified mean and covariance matrices.
 Imports: 
+  Rdpack,
   mvtnorm,
   cubature,
   combinat,
   multipol,
   mpoly
+RdMacros: Rdpack
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 8.0.0
 Suggests: 
