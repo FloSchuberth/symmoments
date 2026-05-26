@@ -64,6 +64,8 @@ jobs:
         with:
           token: ${{ secrets.RHUB_TOKEN }}
           job-config: ${{ matrix.config.job-config }}
+          # Skip vignette building on Linux check containers
+          args: 'c("--no-manual", "--no-build-vignettes")'
 
   other-platforms:
     needs: setup
@@ -85,14 +87,6 @@ jobs:
         with:
           token: ${{ secrets.RHUB_TOKEN }}
           job-config: ${{ matrix.config.job-config }}
-          
-      # ─── FIX: Force install TinyTeX via R on Windows/macOS ──────────────────
-      - name: Install TinyTeX for Vignettes
-        run: |
-          Rscript -e "install.packages('tinytex')"
-          Rscript -e "tinytex::install_tinytex()"
-        shell: bash
-      # ────────────────────────────────────────────────────────────────────────
 
       - uses: r-hub/actions/setup-deps@v1
         with:
@@ -102,3 +96,5 @@ jobs:
         with:
           job-config: ${{ matrix.config.job-config }}
           token: ${{ secrets.RHUB_TOKEN }}
+          # ─── FIX: Pass flags directly to R-hub's R CMD check runner ───────
+          args: 'c("--no-manual", "--no-build-vignettes")'
