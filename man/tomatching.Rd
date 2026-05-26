@@ -59,5 +59,5 @@ Diaconis, P. W., & Holmes, S. (1998). Matchings and Phylogenetic Trees.
 \code{\link{toMoment}}, \code{\link{toNewick}}
 }
 \author{
-Kem Phillips <\email{kemphillips@comcast.net}>
+Kem Phillips \if{html}{\out{<\email{kemphillips@comcast.net}>}}
 }

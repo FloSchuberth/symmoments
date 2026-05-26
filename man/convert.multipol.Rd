@@ -63,5 +63,5 @@ Statistical Software}.
 \code{\link{integrate.polynomial}}
 }
 \author{
-Kem Phillips <\email{kemphillips@comcast.net}>
+Kem Phillips \if{html}{\out{<\email{kemphillips@comcast.net}>}}
 }
