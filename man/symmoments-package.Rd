@@ -145,6 +145,14 @@ exam.L.matrix <- toMoment(exam.matching)
 \references{
 \insertRef{Phillips2010}{symmoments}
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/FloSchuberth/symmoments}
+  \item Report bugs at \url{https://github.com/FloSchuberth/symmoments/issues}
+}
+
+}
 \author{
 Kem Phillips \email{kemphillips@comcast.net}
 \cr\cr
