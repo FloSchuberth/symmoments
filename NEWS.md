@@ -1,3 +1,4 @@
-# symmoments (development version)
+# symmoments (version 1.3.0)
 
-* Added a `NEWS.md` file to track changes to the package.
+* Change maintainer to Florian Schuberth
+* Rewrote manuals with Roxygen.
