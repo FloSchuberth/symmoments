@@ -8,7 +8,8 @@
 [![R-CMD-check](https://github.com/FloSchuberth/symmoments/actions/workflows/rhub.yaml/badge.svg)](https://github.com/FloSchuberth/symmoments/actions)
 <!-- badges: end -->
 
-The goal of symmoments is to …
+Symbolically computes and numerically evaluates multivariate normal
+moments , where , in terms of mu and S elements.
 
 ## Installation
 
@@ -26,29 +27,72 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(symmoments)
-## basic example code
+ # Compute the moment for the 4-dimensional moment c(1,2,3,4):
+callmultmoments(c(1,2,3,4))
+#> E[ X1^1 X2^2 X3^3 X4^4 ]: 
+#>    coef S(1,1) S(1,2) S(1,3) S(1,4) S(2,2) S(2,3) S(2,4) S(3,3) S(3,4) S(4,4)
+#> 1    72      0      0      0      1      0      0      2      1      1      0
+#> 2   144      0      0      0      1      0      1      1      0      2      0
+#> 3    72      0      0      0      1      0      1      1      1      0      1
+#> 4    72      0      0      0      1      0      2      0      0      1      1
+#> 5    24      0      0      0      1      1      0      0      0      3      0
+#> 6    36      0      0      0      1      1      0      0      1      1      1
+#> 7    72      0      0      1      0      0      0      2      0      2      0
+#> 8    36      0      0      1      0      0      0      2      1      0      1
+#> 9   144      0      0      1      0      0      1      1      0      1      1
+#> 10   18      0      0      1      0      0      2      0      0      0      2
+#> 11   36      0      0      1      0      1      0      0      0      2      1
+#> 12    9      0      0      1      0      1      0      0      1      0      2
+#> 13   48      0      1      0      0      0      0      1      0      3      0
+#> 14   72      0      1      0      0      0      0      1      1      1      1
+#> 15   72      0      1      0      0      0      1      0      0      2      1
+#> 16   18      0      1      0      0      0      1      0      1      0      2
+
+# Print the representation of the 4-dimensional moment c(1,2,3,4):
+print(callmultmoments(c(1,2,3,4)))
+#> E[ X1^1 X2^2 X3^3 X4^4 ]: 
+#>    coef S(1,1) S(1,2) S(1,3) S(1,4) S(2,2) S(2,3) S(2,4) S(3,3) S(3,4) S(4,4)
+#> 1    72      0      0      0      1      0      0      2      1      1      0
+#> 2   144      0      0      0      1      0      1      1      0      2      0
+#> 3    72      0      0      0      1      0      1      1      1      0      1
+#> 4    72      0      0      0      1      0      2      0      0      1      1
+#> 5    24      0      0      0      1      1      0      0      0      3      0
+#> 6    36      0      0      0      1      1      0      0      1      1      1
+#> 7    72      0      0      1      0      0      0      2      0      2      0
+#> 8    36      0      0      1      0      0      0      2      1      0      1
+#> 9   144      0      0      1      0      0      1      1      0      1      1
+#> 10   18      0      0      1      0      0      2      0      0      0      2
+#> 11   36      0      0      1      0      1      0      0      0      2      1
+#> 12    9      0      0      1      0      1      0      0      1      0      2
+#> 13   48      0      1      0      0      0      0      1      0      3      0
+#> 14   72      0      1      0      0      0      0      1      1      1      1
+#> 15   72      0      1      0      0      0      1      0      0      2      1
+#> 16   18      0      1      0      0      0      1      0      1      0      2
+
+# Compute the LaTeX representation of the central moment c(1,2,3,4):
+toLatex(callmultmoments(c(1,2,3,4)))
+#>  [1] "E[X_{1}^{1}X_{2}^{2}X_{3}^{3}X_{4}^{4}]=\\\\"                             
+#>  [2] "18\\sigma_{1,2}\\sigma_{2,3}\\sigma_{3,3}\\sigma_{4,4}^{2}+"              
+#>  [3] "72\\sigma_{1,2}\\sigma_{2,3}\\sigma_{3,4}^{2}\\sigma_{4,4}+"              
+#>  [4] "72\\sigma_{1,2}\\sigma_{2,4}\\sigma_{3,3}\\sigma_{3,4}\\sigma_{4,4}+"     
+#>  [5] "48\\sigma_{1,2}\\sigma_{2,4}\\sigma_{3,4}^{3}+\\\\"                       
+#>  [6] "9\\sigma_{1,3}\\sigma_{2,2}\\sigma_{3,3}\\sigma_{4,4}^{2}+"               
+#>  [7] "36\\sigma_{1,3}\\sigma_{2,2}\\sigma_{3,4}^{2}\\sigma_{4,4}+"              
+#>  [8] "18\\sigma_{1,3}\\sigma_{2,3}^{2}\\sigma_{4,4}^{2}+"                       
+#>  [9] "144\\sigma_{1,3}\\sigma_{2,3}\\sigma_{2,4}\\sigma_{3,4}\\sigma_{4,4}+\\\\"
+#> [10] "36\\sigma_{1,3}\\sigma_{2,4}^{2}\\sigma_{3,3}\\sigma_{4,4}+"              
+#> [11] "72\\sigma_{1,3}\\sigma_{2,4}^{2}\\sigma_{3,4}^{2}+"                       
+#> [12] "36\\sigma_{1,4}\\sigma_{2,2}\\sigma_{3,3}\\sigma_{3,4}\\sigma_{4,4}+"     
+#> [13] "24\\sigma_{1,4}\\sigma_{2,2}\\sigma_{3,4}^{3}+\\\\"                       
+#> [14] "72\\sigma_{1,4}\\sigma_{2,3}^{2}\\sigma_{3,4}\\sigma_{4,4}+"              
+#> [15] "72\\sigma_{1,4}\\sigma_{2,3}\\sigma_{2,4}\\sigma_{3,3}\\sigma_{4,4}+"     
+#> [16] "144\\sigma_{1,4}\\sigma_{2,3}\\sigma_{2,4}\\sigma_{3,4}^{2}+"             
+#> [17] "72\\sigma_{1,4}\\sigma_{2,4}^{2}\\sigma_{3,3}\\sigma_{3,4}\\\\"
+
+# evaluate the moment c(1,2,3,4) at the following variance-covariance matrix
+#  4 2 1 1
+#  2 3 1 1
+#  1 1 2 1
+evaluate(callmultmoments(c(1,2,3,4)), c(4,2,1,1,3,1,1,2,1,2))
+#> [1] 3480
 ```
-
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" alt="" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
