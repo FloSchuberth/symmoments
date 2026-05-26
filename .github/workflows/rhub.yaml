@@ -1,10 +1,5 @@
 # R-hub's generic GitHub Actions workflow file. It's canonical location is at
 # https://github.com/r-hub/actions/blob/v1/workflows/rhub.yaml
-# You can update this file to a newer version using the rhub2 package:
-#
-# rhub::rhub_setup()
-#
-# It is unlikely that you need to modify this file manually.
 name: R-hub
 run-name: "${{ github.event.inputs.id }}: ${{ github.event.inputs.name || format('Manually run by {0}', github.triggering_actor) }}"
 
@@ -26,10 +21,8 @@ on:
         description: 'Unique ID. You can leave this empty now.'
         type: string
 
-# FORCE LATEX / TINYTEX TO BE INSTALLED GLOBALLY ACROSS ALL RUNNERS
 env:
   R_KEEP_PKG_SOURCE: yes
-  NEED_LATEX: "true"
 
 jobs:
 
@@ -40,11 +33,9 @@ jobs:
       platforms: ${{ steps.rhub-setup.outputs.platforms }}
 
     steps:
-    # NO NEED TO CHECKOUT HERE
     - uses: r-hub/actions/setup@v1
       with:
         config: ${{ github.event.inputs.config || 'linux,windows,macos' }}
-        latex: true
       id: rhub-setup
 
   linux-containers:
@@ -94,6 +85,15 @@ jobs:
         with:
           token: ${{ secrets.RHUB_TOKEN }}
           job-config: ${{ matrix.config.job-config }}
+          
+      # ─── FIX: Force install TinyTeX via R on Windows/macOS ──────────────────
+      - name: Install TinyTeX for Vignettes
+        run: |
+          Rscript -e "install.packages('tinytex')"
+          Rscript -e "tinytex::install_tinytex()"
+        shell: bash
+      # ────────────────────────────────────────────────────────────────────────
+
       - uses: r-hub/actions/setup-deps@v1
         with:
           job-config: ${{ matrix.config.job-config }}
