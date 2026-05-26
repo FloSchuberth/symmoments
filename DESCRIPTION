@@ -34,3 +34,5 @@ LazyLoad: yes
 NeedsCompilation: no
 Config/roxygen2/version: 8.0.0
 VignetteBuilder: knitr
+URL: https://github.com/FloSchuberth/symmoments
+BugReports: https://github.com/FloSchuberth/symmoments/issues
