@@ -23,7 +23,7 @@
 #' \insertRef{Rizzo2008}{symmoments}
 #' 
 #'
-#' @author Kem Phillips <\email{kemphillips@@comcast.net}>
+#' @author Kem Phillips \email{kemphillips@@comcast.net}
 #'
 #' @seealso \code{\link{callmultmoments}}, and the methods \code{\link{toLatex}} 
 #'   and \code{\link{evaluate}}.

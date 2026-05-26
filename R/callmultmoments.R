@@ -34,7 +34,7 @@
 #' @references 
 #' \insertRef{Phillips2010}{symmoments}
 #'
-#' @author Kem Phillips <\email{kemphillips@@comcast.net}>
+#' @author Kem Phillips \email{kemphillips@@comcast.net}
 #'
 #' @seealso \code{\link{multmoments}}, and the methods \code{\link{toLatex}}, 
 #' \code{\link{evaluate}}, and \code{\link{simulate}} in the \code{symmoments} 

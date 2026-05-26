@@ -32,7 +32,7 @@ evaluate <- function(object, sigma) {
 #' @references 
 #' \insertRef{Phillips2010}{symmoments}
 #'
-#' @author Kem Phillips <\email{kemphillips@@comcast.net}>
+#' @author Kem Phillips \email{kemphillips@@comcast.net}
 #'
 #' @seealso \code{\link{callmultmoments}}, and the methods \code{\link{simulate}} 
 #'   and \code{\link{toLatex}} from the \code{symmoments} package.
@@ -109,7 +109,7 @@ evaluate <- function(object, sigma) {
 #' @references 
 #' \insertRef{Phillips2010}{symmoments}
 #'
-#' @author Kem Phillips <\email{kemphillips@@comcast.net}>
+#' @author Kem Phillips \email{kemphillips@@comcast.net}
 #'
 #' @seealso \code{\link{evaluate.moment}}, \code{\link{make.all.moments}}
 #'
@@ -245,7 +245,7 @@ evaluate <- function(object, sigma) {
 #' @references 
 #' \insertRef{Phillips2010}{symmoments}
 #'
-#' @author Kem Phillips <\email{kemphillips@@comcast.net}>
+#' @author Kem Phillips \email{kemphillips@@comcast.net}
 #'
 #' @seealso \code{\link{evaluate_noncentral}}, \code{\link{make.all.moments}}
 #'

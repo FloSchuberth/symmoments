@@ -37,7 +37,7 @@
 #' @references 
 #' \insertRef{Phillips2010}{symmoments}
 #'
-#' @author Kem Phillips <\email{kemphillips@@comcast.net}>
+#' @author Kem Phillips \email{kemphillips@@comcast.net}
 #'
 #' @seealso \code{\link{callmultmoments}}, \code{\link{tounsorted}}
 #'

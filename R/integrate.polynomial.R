@@ -39,7 +39,7 @@
 #' @references 
 #' \insertRef{Phillips2010}{symmoments}
 #'
-#' @author Kem Phillips <\email{kemphillips@@comcast.net}>
+#' @author Kem Phillips \email{kemphillips@@comcast.net}
 #'
 #' @seealso \code{\link{evaluate_expected.polynomial}}, \code{\link{multmoments}}, 
 #'   \code{\link{evaluate}}, \code{\link{simulate}}

@@ -21,7 +21,7 @@
 #' @references 
 #' \insertRef{Phillips2010}{symmoments}
 #'
-#' @author Kem Phillips <\email{kemphillips@@comcast.net}>
+#' @author Kem Phillips \email{kemphillips@@comcast.net}
 #'
 #' @seealso \code{\link{convert.multipol}}, 
 #'   \code{\link{evaluate_expected.polynomial}}, 
@@ -170,7 +170,7 @@
 #' @references 
 #' \insertRef{Phillips2010}{symmoments}
 #'
-#' @author Kem Phillips <\email{kemphillips@@comcast.net}>
+#' @author Kem Phillips \email{kemphillips@@comcast.net}
 #'
 #' @seealso \code{\link{convert.mpoly}}, 
 #'   \code{\link{evaluate_expected.polynomial}}, 

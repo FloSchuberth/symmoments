@@ -32,7 +32,7 @@
 #' \cr\cr
 #' \insertRef{Diaconis1998}{symmoments}
 #'
-#' @author Kem Phillips <\email{kemphillips@@comcast.net}>
+#' @author Kem Phillips \email{kemphillips@@comcast.net}
 #'
 #' @seealso \code{\link{toMoment}}, \code{\link{toMatching}}
 #'
