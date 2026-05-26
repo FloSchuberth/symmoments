@@ -64,8 +64,6 @@ jobs:
         with:
           token: ${{ secrets.RHUB_TOKEN }}
           job-config: ${{ matrix.config.job-config }}
-          # Skip vignette building on Linux check containers
-          args: 'c("--no-manual", "--no-build-vignettes")'
 
   other-platforms:
     needs: setup
@@ -88,6 +86,24 @@ jobs:
           token: ${{ secrets.RHUB_TOKEN }}
           job-config: ${{ matrix.config.job-config }}
 
+      # ─── FIX: Install TinyTeX and explicitly bind it to the Runner Environment ───
+      - name: Install LaTeX (TinyTeX)
+        run: |
+          Rscript -e "install.packages('tinytex', repos = 'https://cloud.r-project.org')"
+          Rscript -e "tinytex::install_tinytex(force = TRUE)"
+          
+          # Find where the binary files were installed and push them directly to GitHub's path
+          TINY_ROOT=$(Rscript -e "cat(tinytex::tinytex_root())" | sed 's/\\/\//g')
+          if [ -d "$TINY_ROOT/bin/windows" ]; then
+            echo "$TINY_ROOT/bin/windows" >> $GITHUB_PATH
+          elif [ -d "$TINY_ROOT/bin/universal-darwin" ]; then
+            echo "$TINY_ROOT/bin/universal-darwin" >> $GITHUB_PATH
+          else
+            find "$TINY_ROOT" -type d -name "bin" -exec echo {} >> $GITHUB_PATH \;
+          fi
+        shell: bash
+      # ─────────────────────────────────────────────────────────────────────────────
+
       - uses: r-hub/actions/setup-deps@v1
         with:
           job-config: ${{ matrix.config.job-config }}
@@ -96,5 +112,3 @@ jobs:
         with:
           job-config: ${{ matrix.config.job-config }}
           token: ${{ secrets.RHUB_TOKEN }}
-          # ─── FIX: Pass flags directly to R-hub's R CMD check runner ───────
-          args: 'c("--no-manual", "--no-build-vignettes")'
