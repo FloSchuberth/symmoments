@@ -23,10 +23,9 @@
 #' \cr\cr
 #' This function would normally only be called by \code{\link{callmultmoments}}.
 #'
-#' @references Phillips, K. (2010). Symbolic Computation of the Central 
-#' Moments of the Multivariate Normal Distribution. \emph{Journal of 
-#' Statistical Software}.
-#'
+#' @references 
+#' \insertRef{Phillips2010}{symmoments}
+#' 
 #' @author Kem Phillips <\email{kemphillips@@comcast.net}>
 #'
 #' @seealso \code{\link{callmultmoments}}

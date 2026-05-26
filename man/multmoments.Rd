@@ -38,9 +38,7 @@ product of covariance terms. For example, \code{(1, 2, 0)} represents
 This function would normally only be called by \code{\link{callmultmoments}}.
 }
 \references{
-Phillips, K. (2010). Symbolic Computation of the Central
-Moments of the Multivariate Normal Distribution. \emph{Journal of
-Statistical Software}.
+\insertRef{Phillips2010}{symmoments}
 }
 \seealso{
 \code{\link{callmultmoments}}

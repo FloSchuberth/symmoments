@@ -42,13 +42,12 @@ simulate(callmultmoments(c(2, 4)), 10000, NULL, c(0, 0), c(2, 1, 1, 4))
 
 }
 \references{
-Rizzo, M. L. (2008). \emph{Statistical Computing with R}.
-Chapman & Hall/CRC.
+\insertRef{Rizzo2008}{symmoments}
 }
 \seealso{
 \code{\link{callmultmoments}}, and the methods \code{\link{toLatex}}
 and \code{\link{evaluate}}.
 }
 \author{
-Kem Phillips \if{html}{\out{<\email{kemphillips@comcast.net}>}}
+Kem Phillips <\email{kemphillips@comcast.net}>
 }

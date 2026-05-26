@@ -18,9 +18,8 @@
 #' backslash. These can be reset to single backslashes by writing the output 
 #' to a file using the standard R function \code{\link[base]{writeLines}}.
 #'
-#' @references Phillips, K. (2010). Symbolic Computation of the Central 
-#' Moments of the Multivariate Normal Distribution. \emph{Journal of 
-#' Statistical Software}.
+#' @references 
+#' \insertRef{Phillips2010}{symmoments}
 #'
 #' @author Kem Phillips <\email{kemphillips@@comcast.net}>
 #'
@@ -171,9 +170,8 @@
 #' \code{\link{tounsorted}} function will automatically be called to transform 
 #' and obtain it.
 #'
-#' @references Phillips, K. (2010). Symbolic Computation of the Central 
-#' Moments of the Multivariate Normal Distribution. \emph{Journal of 
-#' Statistical Software}.
+#' @references 
+#' \insertRef{Phillips2010}{symmoments}
 #'
 #' @author Kem Phillips <\email{kemphillips@@comcast.net}>
 #'

@@ -60,11 +60,13 @@
 #'   The cubature package must be loaded for the integrate.polynomial function.
 #'   The combinat package must be loaded for the toMoment function.
 #'
-#' @author Maintainer: Kem Phillips \email{kemphillips@@comcast.net}
+#' @author 
+#' Kem Phillips \email{kemphillips@@comcast.net}
+#' \cr\cr
+#' Maintainer: Florian Schuberth \email{f.schuberth@utwente.nl}
 #'
 #' @references
-#' K Phillips, Symbolic Computation of the Central Moments of the Multivariate
-#' Normal Distribution, Journal of Statistical Software, 2010.
+#' \insertRef{Phillips2010}{symmoments}
 #'
 #' @examples
 #' # Compute the moment for the 4-dimensional moment c(1,2,3,4):

@@ -37,14 +37,12 @@ toLatex_noncentral(c(1, 3))
 
 }
 \references{
-Phillips, K. (2010). Symbolic Computation of the Central
-Moments of the Multivariate Normal Distribution. \emph{Journal of
-Statistical Software}.
+\insertRef{Phillips2010}{symmoments}
 }
 \seealso{
 \code{\link{make.all.moments}}, \code{\link{tounsorted}},
 \code{\link{callmultmoments}}, and the method \code{\link{toLatex}}.
 }
 \author{
-Kem Phillips \if{html}{\out{<\email{kemphillips@comcast.net}>}}
+Kem Phillips <\email{kemphillips@comcast.net}>
 }
