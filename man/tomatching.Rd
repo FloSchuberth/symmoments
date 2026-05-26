@@ -57,5 +57,5 @@ exam.matching <- toMatching(exam.moment)
 \code{\link{toMoment}}, \code{\link{toNewick}}
 }
 \author{
-Kem Phillips \if{html}{\out{<\email{kemphillips@comcast.net}>}}
+Kem Phillips \email{kemphillips@comcast.net}
 }

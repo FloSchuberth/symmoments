@@ -59,5 +59,5 @@ evaluate_noncentral(c(3, 1, 2), c(3, 4, 1), c(4, 2, 1, 3, 1, 2), '.GlobalEnv')
 \code{\link{evaluate.moment}}, \code{\link{make.all.moments}}
 }
 \author{
-Kem Phillips \if{html}{\out{<\email{kemphillips@comcast.net}>}}
+Kem Phillips \email{kemphillips@comcast.net}
 }

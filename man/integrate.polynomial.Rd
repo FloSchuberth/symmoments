@@ -75,5 +75,5 @@ integrate.polynomial(t0, c(1, 2, 3), matrix(c(1,0,0, 0,1,0, 0,0,1), nrow = 3, by
 \code{\link{evaluate}}, \code{\link{simulate}}
 }
 \author{
-Kem Phillips <\email{kemphillips@comcast.net}>
+Kem Phillips \email{kemphillips@comcast.net}
 }

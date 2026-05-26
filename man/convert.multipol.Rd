@@ -61,5 +61,5 @@ t3 <- convert.multipol(t2)
 \code{\link{integrate.polynomial}}
 }
 \author{
-Kem Phillips \if{html}{\out{<\email{kemphillips@comcast.net}>}}
+Kem Phillips \email{kemphillips@comcast.net}
 }

@@ -44,6 +44,6 @@ This function would normally only be called by \code{\link{callmultmoments}}.
 \code{\link{callmultmoments}}
 }
 \author{
-Kem Phillips \if{html}{\out{<\email{kemphillips@comcast.net}>}}
+Kem Phillips \email{kemphillips@comcast.net}
 }
 \keyword{internal}

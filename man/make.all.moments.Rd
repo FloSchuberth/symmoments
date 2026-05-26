@@ -62,5 +62,5 @@ make.all.moments(c(3, 3))
 \code{\link{callmultmoments}}, \code{\link{tounsorted}}
 }
 \author{
-Kem Phillips \if{html}{\out{<\email{kemphillips@comcast.net}>}}
+Kem Phillips \email{kemphillips@comcast.net}
 }

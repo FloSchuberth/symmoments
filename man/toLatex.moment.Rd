@@ -40,5 +40,5 @@ toLatex(callmultmoments(c(1, 2, 3)))
 \code{\link{callmultmoments}}, and the \code{\link{evaluate}} method.
 }
 \author{
-Kem Phillips \if{html}{\out{<\email{kemphillips@comcast.net}>}}
+Kem Phillips \email{kemphillips@comcast.net}
 }

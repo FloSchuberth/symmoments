@@ -59,5 +59,5 @@ Felsenstein, J. (1990). The Newick tree format.
 \code{\link{toMoment}}, \code{\link{toMatching}}
 }
 \author{
-Kem Phillips \if{html}{\out{<\email{kemphillips@comcast.net}>}}
+Kem Phillips \email{kemphillips@comcast.net}
 }

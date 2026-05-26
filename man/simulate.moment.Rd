@@ -49,5 +49,5 @@ simulate(callmultmoments(c(2, 4)), 10000, NULL, c(0, 0), c(2, 1, 1, 4))
 and \code{\link{evaluate}}.
 }
 \author{
-Kem Phillips \if{html}{\out{<\email{kemphillips@comcast.net}>}}
+Kem Phillips \email{kemphillips@comcast.net}
 }
