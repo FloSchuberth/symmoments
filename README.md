@@ -5,7 +5,7 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/FloSchuberth/symmoments/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/FloSchuberth/symmoments/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/FloSchuberth/symmoments/actions/workflows/rhub.yaml/badge.svg)](https://github.com/FloSchuberth/symmoments/actions)
 <!-- badges: end -->
 
 The goal of symmoments is to …
