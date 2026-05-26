@@ -1,0 +1,562 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.21)  26 MAY 2026 15:30
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"C:/Users/SchuberthF/Dropbox/R functions on Git/symmoments/symmoments/vignett
+es/symmoments.tex"
+
+(C:/Users/SchuberthF/Dropbox/R functions on Git/symmoments/symmoments/vignettes
+/symmoments.tex
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-09-02>
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\c@figure=\count281
+\c@table=\count282
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+)
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.
+sty
+Package: pdfpages 2025/07/23 v0.6g Insert pages of external PDF documents (AM)
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+) (C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count283
+\calc@Bcount=\count284
+\calc@Adimen=\dimen149
+\calc@Bdimen=\dimen150
+\calc@Askip=\skip51
+\calc@Bskip=\skip52
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count285
+\calc@Cskip=\skip53
+)
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.st
+y
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen151
+\ESO@tempdimb=\dimen152
+
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.st
+y
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+) (C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.st
+y
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color
+.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdfte
+x.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+)
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor
+.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+))
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.
+sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count286
+)
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.
+sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.
+sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graph
+ics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+)
+\Gin@req@height=\dimen153
+\Gin@req@width=\dimen154
+)
+\AM@pagewidth=\dimen155
+\AM@pageheight=\dimen156
+\AM@fboxrule=\dimen157
+
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.
+def
+File: pppdftex.def 2025/07/23 v0.6g Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count287
+\AM@pagebox=\box53
+\AM@global@opts=\toks18
+\AM@pagecnt=\count288
+\AM@toc@title=\toks19
+\AM@lof@heading=\toks20
+\c@AM@survey=\count289
+\AM@templatesizebox=\box54
+) (C:/PROGRA~1/R/R-46~1.0/share/texmf/tex/latex\Sweave.sty
+Package: Sweave 
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/fancyvrb\fancyvrb.
+sty
+Package: fancyvrb 2025/07/28 4.6 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count290
+\FV@InFile=\read2
+\FV@TabBox=\box55
+\c@FancyVerbLine=\count291
+\FV@StepNumber=\count292
+\FV@OutFile=\write3
+) (C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.st
+y
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+) (C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
+))
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backen
+d-pdftex.def
+File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count293
+) (symmoments.aux)
+\openout1 = `symmoments.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-p
+df.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count294
+\scratchdimen=\dimen158
+\scratchbox=\box56
+\nofMPsegments=\count295
+\nofMParguments=\count296
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count297
+\MPscratchDim=\dimen159
+\MPnumerator=\count298
+\makeMPintoPDFobject=\count299
+\everyMPtoPDFconversion=\toks22
+)
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epsto
+pdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwar
+err.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.st
+y
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvd
+efinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoption
+s.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.
+sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkey
+s.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdfte
+xcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-
+sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscap
+e.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscap
+e-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+
+(C:\Users\SchuberthF\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.st
+y
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)) (symmoments-concordance.tex)
+<Phillips2010.pdf, id=2, 597.50829pt x 845.0471pt>
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf>
+Package pdftex.def Info: Phillips2010.pdf  used on input line 7.
+(pdftex.def)             Requested size: 276.00105pt x 390.33818pt.
+<Phillips2010.pdf, id=4, page=1, 597.50829pt x 845.0471pt>
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 1>
+Package pdftex.def Info: Phillips2010.pdf , page1 used on input line 7.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 1>
+Package pdftex.def Info: Phillips2010.pdf , page1 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 1>
+Package pdftex.def Info: Phillips2010.pdf , page1 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 1>
+Package pdftex.def Info: Phillips2010.pdf , page1 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 1>
+Package pdftex.def Info: Phillips2010.pdf , page1 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[1
+
+
+ <./Phillips2010.pdf{C:/Users/SchuberthF/AppData/Local/MiKTeX/fonts/map/pdftex/
+pdftex.map}>]
+<Phillips2010.pdf, id=81, page=2, 597.50829pt x 845.0471pt>
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 2>
+Package pdftex.def Info: Phillips2010.pdf , page2 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 2>
+Package pdftex.def Info: Phillips2010.pdf , page2 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 2>
+Package pdftex.def Info: Phillips2010.pdf , page2 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[2
+
+ <./Phillips2010.pdf>]
+<Phillips2010.pdf, id=120, page=3, 597.50829pt x 845.0471pt>
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 3>
+Package pdftex.def Info: Phillips2010.pdf , page3 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 3>
+Package pdftex.def Info: Phillips2010.pdf , page3 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 3>
+Package pdftex.def Info: Phillips2010.pdf , page3 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[3
+
+ <./Phillips2010.pdf>]
+<Phillips2010.pdf, id=124, page=4, 597.50829pt x 845.0471pt>
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 4>
+Package pdftex.def Info: Phillips2010.pdf , page4 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 4>
+Package pdftex.def Info: Phillips2010.pdf , page4 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 4>
+Package pdftex.def Info: Phillips2010.pdf , page4 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[4
+
+ <./Phillips2010.pdf>]
+<Phillips2010.pdf, id=128, page=5, 597.50829pt x 845.0471pt>
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 5>
+Package pdftex.def Info: Phillips2010.pdf , page5 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 5>
+Package pdftex.def Info: Phillips2010.pdf , page5 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 5>
+Package pdftex.def Info: Phillips2010.pdf , page5 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[5
+
+ <./Phillips2010.pdf>]
+<Phillips2010.pdf, id=132, page=6, 597.50829pt x 845.0471pt>
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 6>
+Package pdftex.def Info: Phillips2010.pdf , page6 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 6>
+Package pdftex.def Info: Phillips2010.pdf , page6 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 6>
+Package pdftex.def Info: Phillips2010.pdf , page6 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[6
+
+ <./Phillips2010.pdf>]
+<Phillips2010.pdf, id=136, page=7, 597.50829pt x 845.0471pt>
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 7>
+Package pdftex.def Info: Phillips2010.pdf , page7 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 7>
+Package pdftex.def Info: Phillips2010.pdf , page7 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 7>
+Package pdftex.def Info: Phillips2010.pdf , page7 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[7
+
+ <./Phillips2010.pdf>]
+<Phillips2010.pdf, id=141, page=8, 597.50829pt x 845.0471pt>
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 8>
+Package pdftex.def Info: Phillips2010.pdf , page8 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 8>
+Package pdftex.def Info: Phillips2010.pdf , page8 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 8>
+Package pdftex.def Info: Phillips2010.pdf , page8 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[8
+
+ <./Phillips2010.pdf>]
+<Phillips2010.pdf, id=155, page=9, 597.50829pt x 845.0471pt>
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 9>
+Package pdftex.def Info: Phillips2010.pdf , page9 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 9>
+Package pdftex.def Info: Phillips2010.pdf , page9 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 9>
+Package pdftex.def Info: Phillips2010.pdf , page9 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[9
+
+ <./Phillips2010.pdf>]
+<Phillips2010.pdf, id=169, page=10, 597.50829pt x 845.0471pt>
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 10>
+Package pdftex.def Info: Phillips2010.pdf , page10 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 10>
+Package pdftex.def Info: Phillips2010.pdf , page10 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 10>
+Package pdftex.def Info: Phillips2010.pdf , page10 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[10
+
+ <./Phillips2010.pdf>]
+<Phillips2010.pdf, id=178, page=11, 597.50829pt x 845.0471pt>
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 11>
+Package pdftex.def Info: Phillips2010.pdf , page11 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 11>
+Package pdftex.def Info: Phillips2010.pdf , page11 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 11>
+Package pdftex.def Info: Phillips2010.pdf , page11 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[11
+
+ <./Phillips2010.pdf>]
+<Phillips2010.pdf, id=187, page=12, 597.50829pt x 845.0471pt>
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 12>
+Package pdftex.def Info: Phillips2010.pdf , page12 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 12>
+Package pdftex.def Info: Phillips2010.pdf , page12 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 12>
+Package pdftex.def Info: Phillips2010.pdf , page12 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[12
+
+ <./Phillips2010.pdf>]
+<Phillips2010.pdf, id=191, page=13, 597.50829pt x 845.0471pt>
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 13>
+Package pdftex.def Info: Phillips2010.pdf , page13 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 13>
+Package pdftex.def Info: Phillips2010.pdf , page13 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 13>
+Package pdftex.def Info: Phillips2010.pdf , page13 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[13
+
+ <./Phillips2010.pdf>]
+<Phillips2010.pdf, id=206, page=14, 597.50829pt x 845.0471pt>
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 14>
+Package pdftex.def Info: Phillips2010.pdf , page14 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 14>
+Package pdftex.def Info: Phillips2010.pdf , page14 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: Phillips2010.pdf Graphic file (type pdf)
+<use Phillips2010.pdf, page 14>
+Package pdftex.def Info: Phillips2010.pdf , page14 used on input line 7.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[14
+
+ <./Phillips2010.pdf>] (symmoments.aux)
+ ***********
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-09-02>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 4305 strings out of 468081
+ 71580 string characters out of 5423368
+ 473430 words of memory out of 5000000
+ 32927 multiletter control sequences out of 15000+600000
+ 628484 words of font info for 41 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 72i,17n,79p,327b,450s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/SchuberthF/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmb10.pfb><C:/Users/SchuberthF/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmbx10.pfb><C:/Users/SchuberthF/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/SchuberthF/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/SchuberthF
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Us
+ers/SchuberthF/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextr
+a/cmex8.pfb><C:/Users/SchuberthF/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmmi10.pfb><C:/Users/SchuberthF/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/SchuberthF/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/SchuberthF/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Schu
+berthF/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C
+:/Users/SchuberthF/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmr7.pfb><C:/Users/SchuberthF/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmr8.pfb><C:/Users/SchuberthF/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/SchuberthF/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmsltt10.pfb><C:/Users/SchuberthF/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/Sch
+uberthF/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.p
+fb><C:/Users/SchuberthF/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmssi10.pfb><C:/Users/SchuberthF/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb><C:/Users/SchuberthF/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/SchuberthF/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/SchuberthF/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Use
+rs/SchuberthF/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti
+12.pfb><C:/Users/SchuberthF/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmti8.pfb><C:/Users/SchuberthF/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmtt10.pfb><C:/Users/SchuberthF/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/SchuberthF/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><C:/Users
+/SchuberthF/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/
+line10.pfb><C:/Users/SchuberthF/AppData/Local/Programs/MiKTeX/fonts/type1/urw/z
+apfchan/uzcmi8a.pfb>
+Output written on symmoments.pdf (14 pages, 393061 bytes).
+PDF statistics:
+ 241 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 85 words of extra memory for PDF output out of 10000 (max. 10000000)
+
