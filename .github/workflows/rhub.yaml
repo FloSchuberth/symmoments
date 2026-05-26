@@ -41,6 +41,7 @@ jobs:
 # This tells GitHub to use manual inputs if they exist, 
 # or fallback to 'linux,windows,macos' on an automatic push.
         config: ${{ github.event.inputs.config || 'linux,windows,macos' }}
+        latex: true
       id: rhub-setup
 
   linux-containers:
