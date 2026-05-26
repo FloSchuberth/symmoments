@@ -38,7 +38,9 @@ jobs:
     # NO NEED TO CHECKOUT HERE
     - uses: r-hub/actions/setup@v1
       with:
-        config: ${{ github.event.inputs.config }}
+# This tells GitHub to use manual inputs if they exist, 
+# or fallback to 'linux,windows,macos' on an automatic push.
+        config: ${{ github.event.inputs.config || 'linux,windows,macos' }}
       id: rhub-setup
 
   linux-containers:
