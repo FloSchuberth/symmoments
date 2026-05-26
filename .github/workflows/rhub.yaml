@@ -23,6 +23,10 @@ on:
 
 env:
   R_KEEP_PKG_SOURCE: yes
+  # ─── FIX FOR LINUX CONTAINERS ──────────────────────────────────────────────
+  # This forces R-hub's Linux container to apt-get install TeX requirements
+  RHUB_PLATFORM_DEPENDENCIES: "texlive, texlive-latex-extra, texlive-fonts-recommended"
+  # ────────────────────────────────────────────────────────────────────────────
 
 jobs:
 
@@ -56,28 +60,6 @@ jobs:
         with:
           token: ${{ secrets.RHUB_TOKEN }}
           job-config: ${{ matrix.config.job-config }}
-
-      # ─── FIX FOR LINUX: Install TinyTeX & Dependencies inside the container ───
-      - name: Install LaTeX (TinyTeX) & Dependencies
-        run: |
-          Rscript -e "install.packages('tinytex', repos = 'https://cloud.r-project.org')"
-          Rscript -e "tinytex::install_tinytex(force = TRUE)"
-          
-          # Find where the binary files were installed and push them directly to GitHub's path
-          TINY_ROOT=$(Rscript -e "cat(tinytex::tinytex_root())" | sed 's/\\/\//g')
-          if [ -d "$TINY_ROOT/bin/x86_64-linux" ]; then
-            echo "$TINY_ROOT/bin/x86_64-linux" >> $GITHUB_PATH
-          elif [ -d "$TINY_ROOT/bin/aarch64-linux" ]; then
-            echo "$TINY_ROOT/bin/aarch64-linux" >> $GITHUB_PATH
-          else
-            find "$TINY_ROOT" -type d -name "bin" -exec echo {} >> $GITHUB_PATH \;
-          fi
-          
-          # Force-install the specific missing LaTeX package(s)
-          Rscript -e "tinytex::tlmgr_install('pdfpages')"
-        shell: bash
-      # ─────────────────────────────────────────────────────────────────────────
-
       - uses: r-hub/actions/setup-deps@v1
         with:
           token: ${{ secrets.RHUB_TOKEN }}
@@ -102,38 +84,4 @@ jobs:
       - uses: r-hub/actions/setup-r@v1
         with:
           job-config: ${{ matrix.config.job-config }}
-          token: ${{ secrets.RHUB_TOKEN }}
-      - uses: r-hub/actions/platform-info@v1
-        with:
-          token: ${{ secrets.RHUB_TOKEN }}
-          job-config: ${{ matrix.config.job-config }}
-
-      # ─── FIX FOR WINDOWS/MAC: Install TinyTeX & Dependencies ──────────────────
-      - name: Install LaTeX (TinyTeX) & Dependencies
-        run: |
-          Rscript -e "install.packages('tinytex', repos = 'https://cloud.r-project.org')"
-          Rscript -e "tinytex::install_tinytex(force = TRUE)"
-
-          # Find where the binary files were installed and push them directly to GitHub's path
-          TINY_ROOT=$(Rscript -e "cat(tinytex::tinytex_root())" | sed 's/\\/\//g')
-          if [ -d "$TINY_ROOT/bin/windows" ]; then
-            echo "$TINY_ROOT/bin/windows" >> $GITHUB_PATH
-          elif [ -d "$TINY_ROOT/bin/universal-darwin" ]; then
-            echo "$TINY_ROOT/bin/universal-darwin" >> $GITHUB_PATH
-          else
-            find "$TINY_ROOT" -type d -name "bin" -exec echo {} >> $GITHUB_PATH \;
-          fi
-
-          # Force-install the specific missing LaTeX package(s)
-          Rscript -e "tinytex::tlmgr_install('pdfpages')"
-        shell: bash
-      # ─────────────────────────────────────────────────────────────────────────
-
-      - uses: r-hub/actions/setup-deps@v1
-        with:
-          job-config: ${{ matrix.config.job-config }}
-          token: ${{ secrets.RHUB_TOKEN }}
-      - uses: r-hub/actions/run-check@v1
-        with:
-          job-config: ${{ matrix.config.job-config }}
-          token: ${{ secrets.RHUB_TOKEN }}
+          token: ${{ secrets.RHUB
