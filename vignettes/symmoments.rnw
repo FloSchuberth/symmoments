@@ -147,7 +147,7 @@ are available in the package \pkg{symmoments} implemented in the \proglang{R} sy
 statistical computing \citep{Rcitation}. Both \proglang{R} itself and the
 \pkg{symmoments} package (as well as all other packages used in this paper) are available under
 the terms of the General Public License (GPL) from the Comprehensive \proglang{R} Archive Network (CRAN,
-\url{http://CRAN.R-project.org/}).
+\url{https://CRAN.R-project.org/}).
 
 \section{Development of the formula for central moments}
 
