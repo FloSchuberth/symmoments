@@ -3,3 +3,5 @@
 ^\.positai$
 ^\.claude$
 ^cran-comments\.md$
+^\.github$
+^README\.Rmd$
