@@ -19,8 +19,9 @@
 #' The \code{mvtnorm} package must be installed for this function to utilize 
 #' \code{\link[mvtnorm]{rmvnorm}}.
 #'
-#' @references Rizzo, M. L. (2008). \emph{Statistical Computing with R}. 
-#'   Chapman & Hall/CRC.
+#' @references 
+#' \insertRef{Rizzo2008}{symmoments}
+#' 
 #'
 #' @author Kem Phillips <\email{kemphillips@@comcast.net}>
 #'

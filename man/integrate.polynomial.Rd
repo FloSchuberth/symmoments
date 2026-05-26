@@ -68,9 +68,7 @@ integrate.polynomial(t0, c(1, 2, 3), matrix(c(1,0,0, 0,1,0, 0,0,1), nrow = 3, by
 
 }
 \references{
-Phillips, K. (2010). Symbolic Computation of the Central
-Moments of the Multivariate Normal Distribution. \emph{Journal of
-Statistical Software}.
+\insertRef{Phillips2010}{symmoments}
 }
 \seealso{
 \code{\link{evaluate_expected.polynomial}}, \code{\link{multmoments}},

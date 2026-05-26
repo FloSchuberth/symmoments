@@ -53,9 +53,7 @@ evaluate_noncentral(c(3, 1, 2), c(3, 4, 1), c(4, 2, 1, 3, 1, 2), '.GlobalEnv')
 
 }
 \references{
-Phillips, K. (2010). Symbolic Computation of the Central
-Moments of the Multivariate Normal Distribution. \emph{Journal of
-Statistical Software}.
+\insertRef{Phillips2010}{symmoments}
 }
 \seealso{
 \code{\link{evaluate.moment}}, \code{\link{make.all.moments}}

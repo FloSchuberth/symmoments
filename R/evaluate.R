@@ -29,9 +29,8 @@ evaluate <- function(object, sigma) {
 #' matrices representing the moment, and the third component containing their 
 #' corresponding coefficients. This is an object of class \code{'moment'}.
 #'
-#' @references Phillips, K. (2010). Symbolic Computation of the Central 
-#' Moments of the Multivariate Normal Distribution. \emph{Journal of 
-#' Statistical Software}.
+#' @references 
+#' \insertRef{Phillips2010}{symmoments}
 #'
 #' @author Kem Phillips <\email{kemphillips@@comcast.net}>
 #'
@@ -107,9 +106,8 @@ evaluate <- function(object, sigma) {
 #' The computation will stop with an error message if any required central moment 
 #' is missing from \code{envir}.
 #'
-#' @references Phillips, K. (2010). Symbolic Computation of the Central 
-#' Moments of the Multivariate Normal Distribution. \emph{Journal of 
-#' Statistical Software}.
+#' @references 
+#' \insertRef{Phillips2010}{symmoments}
 #'
 #' @author Kem Phillips <\email{kemphillips@@comcast.net}>
 #'
@@ -244,9 +242,8 @@ evaluate <- function(object, sigma) {
 #' The default is the \code{symmoments} environment. The computation will stop 
 #' with an error message if any required central moment is missing from \code{envir}.
 #'
-#' @references Phillips, K. (2010). Symbolic Computation of the Central 
-#' Moments of the Multivariate Normal Distribution. \emph{Journal of 
-#' Statistical Software}.
+#' @references 
+#' \insertRef{Phillips2010}{symmoments}
 #'
 #' @author Kem Phillips <\email{kemphillips@@comcast.net}>
 #'

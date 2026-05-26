@@ -143,10 +143,11 @@ exam.L.matrix <- toMoment(exam.matching)
 
 }
 \references{
-K Phillips, Symbolic Computation of the Central Moments of the Multivariate
-Normal Distribution, Journal of Statistical Software, 2010.
+\insertRef{Phillips2010}{symmoments}
 }
 \author{
-Maintainer: Kem Phillips \email{kemphillips@comcast.net}
+Kem Phillips \email{kemphillips@comcast.net}
+\cr\cr
+Maintainer: Florian Schuberth \email{f.schuberth@utwente.nl}
 }
 \keyword{internal}

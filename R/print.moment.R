@@ -10,9 +10,8 @@
 #' the lines of the representation matrix with the corresponding coefficient 
 #' attached to each row.
 #'
-#' @references Phillips, K. (2010). Symbolic Computation of the Central 
-#' Moments of the Multivariate Normal Distribution. \emph{Journal of 
-#' Statistical Software}.
+#' @references 
+#' \insertRef{Phillips2010}{symmoments}
 #'
 #' @author Kem Phillips <\email{kemphillips@@comcast.net}>
 #'

@@ -54,13 +54,11 @@ evaluate_expected.polynomial(t0, c(1, 2, 3), c(1, 0, 0, 1, 0, 1))
 
 }
 \references{
-Phillips, K. (2010). Symbolic Computation of the Central
-Moments of the Multivariate Normal Distribution. \emph{Journal of
-Statistical Software}.
+\insertRef{Phillips2010}{symmoments}
 }
 \seealso{
 \code{\link{evaluate_noncentral}}, \code{\link{make.all.moments}}
 }
 \author{
-Kem Phillips \if{html}{\out{<\email{kemphillips@comcast.net}>}}
+Kem Phillips <\email{kemphillips@comcast.net}>
 }

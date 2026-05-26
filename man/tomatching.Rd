@@ -49,11 +49,9 @@ exam.matching <- toMatching(exam.moment)
 
 }
 \references{
-Phillips, K. (2010). Symbolic Computation of the Central Moments of the
-Multivariate Normal Distribution. \emph{Journal of Statistical Software}.
+\insertRef{Phillips2010}{symmoments}
 \cr\cr
-Diaconis, P. W., & Holmes, S. (1998). Matchings and Phylogenetic Trees.
-\emph{Proceedings of the National Academy of Sciences}, 95(25), 14600-14602.
+\insertRef{Diaconis1998}{symmoments}
 }
 \seealso{
 \code{\link{toMoment}}, \code{\link{toNewick}}
