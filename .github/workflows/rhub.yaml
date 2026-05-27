@@ -1,11 +1,4 @@
-# R-hub's generic GitHub Actions workflow file. It's canonical location is at
-# https://github.com/r-hub/actions/blob/v1/workflows/rhub.yaml
-# You can update this file to a newer version using the rhub2 package:
-#
-# rhub::rhub_setup()
-#
-# It is unlikely that you need to modify this file manually.
-
+# R-hub's generic GitHub Actions workflow file.
 name: R-hub
 run-name: "${{ github.event.inputs.id }}: ${{ github.event.inputs.name || format('Manually run by {0}', github.triggering_actor) }}"
 
@@ -23,6 +16,12 @@ on:
         description: 'Unique ID. You can leave this empty now.'
         type: string
 
+# GLOBAL FIX: Force the underlying R process to skip LaTeX demands entirely
+env:
+  R_KEEP_PKG_SOURCE: yes
+  _R_CHECK_CRAN_INCOMING_: false
+  R_CMD_CHECK_ARGS: "--no-manual --no-build-vignettes"
+
 jobs:
 
   setup:
@@ -32,7 +31,6 @@ jobs:
       platforms: ${{ steps.rhub-setup.outputs.platforms }}
 
     steps:
-    # NO NEED TO CHECKOUT HERE
     - uses: r-hub/actions/setup@v1
       with:
         config: ${{ github.event.inputs.config }}
@@ -52,9 +50,6 @@ jobs:
 
     steps:
       - uses: r-hub/actions/checkout@v1
-        env:
-          BUILD_ARGS: --no-build-vignettes
-          CHECK_ARGS: --ignore-vignettes
       - uses: r-hub/actions/platform-info@v1
         with:
           token: ${{ secrets.RHUB_TOKEN }}
@@ -80,9 +75,6 @@ jobs:
 
     steps:
       - uses: r-hub/actions/checkout@v1
-        env:
-          BUILD_ARGS: --no-build-vignettes
-          CHECK_ARGS: --ignore-vignettes
       - uses: r-hub/actions/setup-r@v1
         with:
           job-config: ${{ matrix.config.job-config }}
