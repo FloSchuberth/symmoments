@@ -1,13 +1,15 @@
 # R-hub's generic GitHub Actions workflow file. It's canonical location is at
 # https://github.com/r-hub/actions/blob/v1/workflows/rhub.yaml
+# You can update this file to a newer version using the rhub2 package:
+#
+# rhub::rhub_setup()
+#
+# It is unlikely that you need to modify this file manually.
+
 name: R-hub
 run-name: "${{ github.event.inputs.id }}: ${{ github.event.inputs.name || format('Manually run by {0}', github.triggering_actor) }}"
 
 on:
-  push:
-    branches: [main, master]
-  pull_request:
-    branches: [main, master]
   workflow_dispatch:
     inputs:
       config:
@@ -21,13 +23,6 @@ on:
         description: 'Unique ID. You can leave this empty now.'
         type: string
 
-env:
-  R_KEEP_PKG_SOURCE: yes
-  # ─── FIX FOR LINUX CONTAINERS ──────────────────────────────────────────────
-  # This forces R-hub's Linux container to apt-get install TeX requirements
-  RHUB_PLATFORM_DEPENDENCIES: "texlive, texlive-latex-extra, texlive-fonts-recommended"
-  # ────────────────────────────────────────────────────────────────────────────
-
 jobs:
 
   setup:
@@ -37,9 +32,10 @@ jobs:
       platforms: ${{ steps.rhub-setup.outputs.platforms }}
 
     steps:
+    # NO NEED TO CHECKOUT HERE
     - uses: r-hub/actions/setup@v1
       with:
-        config: ${{ github.event.inputs.config || 'linux,windows,macos' }}
+        config: ${{ github.event.inputs.config }}
       id: rhub-setup
 
   linux-containers:
@@ -84,4 +80,16 @@ jobs:
       - uses: r-hub/actions/setup-r@v1
         with:
           job-config: ${{ matrix.config.job-config }}
-          token: ${{ secrets.RHUB
+          token: ${{ secrets.RHUB_TOKEN }}
+      - uses: r-hub/actions/platform-info@v1
+        with:
+          token: ${{ secrets.RHUB_TOKEN }}
+          job-config: ${{ matrix.config.job-config }}
+      - uses: r-hub/actions/setup-deps@v1
+        with:
+          job-config: ${{ matrix.config.job-config }}
+          token: ${{ secrets.RHUB_TOKEN }}
+      - uses: r-hub/actions/run-check@v1
+        with:
+          job-config: ${{ matrix.config.job-config }}
+          token: ${{ secrets.RHUB_TOKEN }}
