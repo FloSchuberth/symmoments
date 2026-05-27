@@ -1,7 +1,7 @@
 Package: symmoments
 Title: Symbolic Central and Noncentral Moments of the Multivariate
         Normal Distribution
-Version: 1.2.2
+Version: 1.2.2.9000
 Authors@R: c(person(given = "Kem",
                     family = "Phillips",
                     role = c("aut"),
