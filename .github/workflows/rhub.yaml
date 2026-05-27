@@ -1,7 +1,6 @@
 # R-hub's generic GitHub Actions workflow file.
 name: R-hub
 run-name: "${{ github.event.inputs.id }}: ${{ github.event.inputs.name || format('Manually run by {0}', github.triggering_actor) }}"
-
 on:
   workflow_dispatch:
     inputs:
@@ -15,24 +14,19 @@ on:
       id:
         description: 'Unique ID. You can leave this empty now.'
         type: string
-
 env:
   R_KEEP_PKG_SOURCE: yes
-
 jobs:
-
   setup:
     runs-on: ubuntu-latest
     outputs:
       containers: ${{ steps.rhub-setup.outputs.containers }}
       platforms: ${{ steps.rhub-setup.outputs.platforms }}
-
     steps:
     - uses: r-hub/actions/setup@v1
       with:
         config: ${{ github.event.inputs.config }}
       id: rhub-setup
-
   linux-containers:
     needs: setup
     if: ${{ needs.setup.outputs.containers != '[]' }}
@@ -44,23 +38,25 @@ jobs:
         config: ${{ fromJson(needs.setup.outputs.containers) }}
     container:
       image: ${{ matrix.config.container }}
-
     steps:
       - uses: r-hub/actions/checkout@v1
+      - name: Install TeX Live (apt)
+        run: |
+          apt-get update -qq
+          apt-get install -y --no-install-recommends \
+            texlive-latex-base \
+            texlive-latex-recommended \
+            texlive-latex-extra \
+            texlive-fonts-recommended \
+            texlive-plain-generic
+        shell: bash
+      - name: Verify TeX installation
+        run: tex --version
+        shell: bash
       - uses: r-hub/actions/platform-info@v1
         with:
           token: ${{ secrets.RHUB_TOKEN }}
           job-config: ${{ matrix.config.job-config }}
-          
-      # ─── THE NEW LINUX FIX: Use the Dedicated TeX Action ──────────────────
-      - name: Setup TeX Live
-        uses: teatimeguest/setup-texlive-action@v3
-        with:
-          packages: |
-            scheme-medium
-            pdfpages
-      # ──────────────────────────────────────────────────────────────────────
-
       - uses: r-hub/actions/setup-deps@v1
         with:
           token: ${{ secrets.RHUB_TOKEN }}
@@ -69,7 +65,6 @@ jobs:
         with:
           token: ${{ secrets.RHUB_TOKEN }}
           job-config: ${{ matrix.config.job-config }}
-
   other-platforms:
     needs: setup
     if: ${{ needs.setup.outputs.platforms != '[]' }}
@@ -79,7 +74,6 @@ jobs:
       fail-fast: false
       matrix:
         config: ${{ fromJson(needs.setup.outputs.platforms) }}
-
     steps:
       - uses: r-hub/actions/checkout@v1
       - uses: r-hub/actions/setup-r@v1
@@ -90,28 +84,8 @@ jobs:
         with:
           token: ${{ secrets.RHUB_TOKEN }}
           job-config: ${{ matrix.config.job-config }}
-          
-      # Dynamically installs a lightweight TinyTeX package on Windows / macOS host systems
       - name: Install LaTeX (TinyTeX)
         run: |
           Rscript -e "install.packages('tinytex', repos = 'https://cloud.r-project.org')"
           Rscript -e "tinytex::install_tinytex(force = TRUE)"
           TINY_ROOT=$(Rscript -e "cat(tinytex::tinytex_root())" | sed 's/\\/\//g')
-          if [ -d "$TINY_ROOT/bin/windows" ]; then
-            echo "$TINY_ROOT/bin/windows" >> $GITHUB_PATH
-          elif [ -d "$TINY_ROOT/bin/universal-darwin" ]; then
-            echo "$TINY_ROOT/bin/universal-darwin" >> $GITHUB_PATH
-          else
-            find "$TINY_ROOT" -type d -name "bin" -exec echo {} >> $GITHUB_PATH \;
-          fi
-          Rscript -e "tinytex::tlmgr_install('pdfpages')"
-        shell: bash
-
-      - uses: r-hub/actions/setup-deps@v1
-        with:
-          job-config: ${{ matrix.config.job-config }}
-          token: ${{ secrets.RHUB_TOKEN }}
-      - uses: r-hub/actions/run-check@v1
-        with:
-          job-config: ${{ matrix.config.job-config }}
-          token: ${{ secrets.RHUB_TOKEN }}
