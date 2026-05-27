@@ -18,8 +18,6 @@ on:
 
 env:
   R_KEEP_PKG_SOURCE: yes
-  # This tells the R-hub Linux container builder to apt-get install TeX requirements automatically
-  RHUB_PLATFORM_DEPENDENCIES: "texlive, texlive-latex-extra, texlive-fonts-recommended"
 
 jobs:
 
@@ -53,6 +51,23 @@ jobs:
         with:
           token: ${{ secrets.RHUB_TOKEN }}
           job-config: ${{ matrix.config.job-config }}
+          
+      # ─── THE MISSING LINUX FIX GOES HERE ───────────────────────────────────
+      - name: Install LaTeX (TinyTeX) inside Linux Container
+        run: |
+          Rscript -e "install.packages('tinytex', repos = 'https://cloud.r-project.org')"
+          Rscript -e "tinytex::install_tinytex(force = TRUE)"
+          TINY_ROOT=$(Rscript -e "cat(tinytex::tinytex_root())")
+          if [ -d "$TINY_ROOT/bin/x86_64-linux" ]; then
+            echo "$TINY_ROOT/bin/x86_64-linux" >> $GITHUB_PATH
+          else
+            find "$TINY_ROOT" -type d -name "bin" -exec echo {} >> $GITHUB_PATH \;
+          fi
+          # Pre-install dependencies for your Sweave document
+          Rscript -e "tinytex::tlmgr_install(c('pdfpages', 'tools'))"
+        shell: bash
+      # ────────────────────────────────────────────────────────────────────────
+      
       - uses: r-hub/actions/setup-deps@v1
         with:
           token: ${{ secrets.RHUB_TOKEN }}
