@@ -8,8 +8,9 @@
 [![R-CMD-check](https://github.com/FloSchuberth/symmoments/actions/workflows/rhub.yaml/badge.svg)](https://github.com/FloSchuberth/symmoments/actions)
 <!-- badges: end -->
 
-Symbolically computes and numerically evaluates multivariate normal
-moments , where , in terms of mu and S elements.
+The symmoments R package can be used to Symbolically compute and
+numerically evaluate multivariate normal moments , where , in terms of
+mu and S elements.
 
 ## Installation
 

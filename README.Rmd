@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 [![R-CMD-check](https://github.com/FloSchuberth/symmoments/actions/workflows/rhub.yaml/badge.svg)](https://github.com/FloSchuberth/symmoments/actions)
 <!-- badges: end -->
 
-Symbolically computes and numerically evaluates multivariate normal moments \eqn{E[X_1^{k_1} \cdots X_n^{k_n}]}, where \eqn{(X_1,\ldots,X_n) \sim N(\mu, \Sigma)}, in terms of mu and S elements.
+The symmoments R package can be used to Symbolically compute and numerically evaluate multivariate normal moments \eqn{E[X_1^{k_1} \cdots X_n^{k_n}]}, where \eqn{(X_1,\ldots,X_n) \sim N(\mu, \Sigma)}, in terms of mu and S elements.
 
 ## Installation
 
